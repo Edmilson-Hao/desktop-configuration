@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Needed pkgs
-pkg install xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano micro doas lxappearance leafpad rxvt-unicode xterm setxkbmap papirus-icon-theme terminus-font pcmangm compton
+pkg install xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano micro doas lxappearance leafpad rxvt-unicode xterm setxkbmap papirus-icon-theme terminus-font pcmangm compton htop font-awesome
 
 #configure doas
 echo "permit nopass edmilson" >> /usr/local/etc/doas.conf
