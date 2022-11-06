@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Needed pkgs
-pkg install xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano micro doas lxappearance leafpad rxvt-unicode xterm setxkbmap papirus-icon-theme terminus-font pcmangm
+pkg install xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano micro doas lxappearance leafpad rxvt-unicode xterm setxkbmap papirus-icon-theme terminus-font pcmangm compton
 
 #configure doas
 echo "permit nopass edmilson" >> /usr/local/etc/doas.conf
@@ -27,3 +27,6 @@ mv .Xresources /home/edmilson/.Xresources
 
 #mv autostart.sh
 mv .autostart.sh /home/edmilson/.autostart.sh
+
+#mv compton
+mv compton.conf .config/compton.conf
