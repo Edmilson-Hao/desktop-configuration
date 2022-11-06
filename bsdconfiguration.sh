@@ -29,4 +29,4 @@ mv .Xresources /home/edmilson/.Xresources
 mv .autostart.sh /home/edmilson/.autostart.sh
 
 #mv compton
-mv compton.conf .config/compton.conf
+mv compton.conf /home/edmilson/.config/compton.conf
