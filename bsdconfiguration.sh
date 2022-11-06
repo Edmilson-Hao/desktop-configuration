@@ -24,3 +24,6 @@ mv config /home/edmilson/.config/i3/config
 
 #mv .Xresources
 mv .Xresources /home/edmilson/.Xresources
+
+#mv autostart.sh
+mv .autostart.sh /home/edmilson/.autostart.sh
