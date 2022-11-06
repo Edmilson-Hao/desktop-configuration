@@ -1,0 +1,30 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    100
+Xft.antialias:              true
+Xft.rgba:                   rgb
+URxvt.transparency:	    false
+
+! Font
+URxvt*letterSpace: 0
+urxvt*font:              xft:xos4 Terminus:pixelsize=14:antialias=false:hinting=false
+urxvt*boldFont:          xft:xos4 Terminus:pixelsize=14:antialias=false:bold:hinting=false
+urxvt*italicFont:        xft:xos4 Terminus:pixelsize=14:antialias=false:italic:hinting=false
+urxvt*bolditalicFont:    xft:xos4 Terminus:pixelsize=14:antialias=false:bold:italic:hinting=false
+
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Cursor
+URxvt.cursorBlink:          true
+!URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+Xcursor.theme: Breeze-Adapta
+Xcursor.size: 11
+
+*background: #2F343F
+*foreground: #00FF00
