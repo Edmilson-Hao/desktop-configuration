@@ -1,1 +1,0 @@
-# freebsdConfig
