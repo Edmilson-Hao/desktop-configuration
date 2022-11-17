@@ -23,7 +23,6 @@ echo "/urc/local/bin/i3" >> /home/edmilson/.xinitrc && echo "add i3 to .xinitrc 
 
 #add startx to .shrc
 [ ! -f "/home/$userName/.shrc" ]  && touch /home/$userName/.shrc
-echo "r=`top | grep Xorg`\nif [ "$r" ]; then\n	ufetch\nelse\n    \n    startx &\nfi" >> /home/edmilson/.shrc
 
 echo "if pgrep -x "Xorg" > /dev/null
 then
@@ -37,14 +36,13 @@ fi" >> /home/$userName/.shrc && echo "Add test to check if X is running an launc
 [ ! -d "/home/$userName/.wallpaper" ] && mkdir /home/$userName/.wallpaper
 mv wallpaper.jpg /home/$userName/.wallpaper/wallpaper.jpg && echo "Moved wallpaper to correct folder."
 
-#-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-##-#-#-#-#-#-#-#
-
 #move i3status.conf
 mv i3status.conf /usr/local/etc/i3status.conf
 
 #mv i3 config file
-mv config /home/edmilson/.config/i3/config
-
+[ ! -d "/home/$userName/.config/i3" ] && /home/$userName/.config/i3
+mv config /home/$userName/.config/i3/config
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 #mv .Xresources
 mv .Xresources /home/edmilson/.Xresources
 
