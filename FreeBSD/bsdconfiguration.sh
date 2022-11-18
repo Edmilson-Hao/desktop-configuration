@@ -2,7 +2,6 @@
 
 userName=''
 #Get username
-echo "What is your username? "
 echo "Enter the user name: "  
 read userName
 
@@ -42,12 +41,12 @@ mv i3status.conf /usr/local/etc/i3status.conf
 #mv i3 config file
 [ ! -d "/home/$userName/.config/i3" ] && /home/$userName/.config/i3
 mv config /home/$userName/.config/i3/config
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
 #mv .Xresources
-mv .Xresources /home/edmilson/.Xresources
+mv .Xresources /home/$userName/.Xresources
 
 #mv autostart.sh
-mv .autostart.sh /home/edmilson/.autostart.sh
+mv .autostart.sh /home/$userName/.autostart.sh
 
 #mv compton
-mv compton.conf /home/edmilson/.config/compton.conf
+mv compton.conf /home/$userName/.config/compton.conf
