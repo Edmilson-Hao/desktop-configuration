@@ -43,10 +43,16 @@ mv i3status.conf /usr/local/etc/i3status.conf
 mv config /home/$userName/.config/i3/config
 
 #mv .Xresources
-mv .Xresources /home/$userName/.Xresources
+#mv .Xresources /home/$userName/.Xresources
 
 #mv autostart.sh
 mv .autostart.sh /home/$userName/.autostart.sh
 
 #mv compton
 mv compton.conf /home/$userName/.config/compton.conf
+
+#Add Console resolution to /boot/loader.conf
+echo -e "kern.vt.fb.default_mode=\"1680x1050\"" >> /boot/loader.conf
+
+#Add AMDGPU to /etc/rc.conf
+echo -e "kld_list=\"amdgpu\"" >> /etc/rc.conf
