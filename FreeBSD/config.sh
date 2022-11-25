@@ -10,9 +10,10 @@ graphicDriver="amdgpu"
 intelDevice="no"
 
 #default packages
-defaultPackages="xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano micro doas lxappearance leafpad rxvt-unicode xterm setxkbmap papirus-icon-theme terminus-font pcmanfm compton htop font-awesome"
+defaultPackages="xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano micro doas lxappearance leafpad rxvt-unicode xterm setxkbmap papirus-icon-theme terminus-font pcmanfm compton htop font-awesome drm-kmod"
 
 #add any package you want (space separeted)
 neededPackages=""
 
-[[ intelDevice -eq "yes" ]] && neededPackages+=" xf86-video-intel"
+#select console resolution (3840x2160 || 1920x1080 || 1680x1050 || 1024x768)
+resolution="1680x1050"

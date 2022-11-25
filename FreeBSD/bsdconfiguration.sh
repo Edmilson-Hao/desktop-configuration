@@ -50,10 +50,11 @@ mv .autostart.sh /home/$userName/.autostart.sh
 mv compton.conf /home/$userName/.config/compton.conf
 
 #Add Console resolution to /boot/loader.conf
-echo -e "kern.vt.fb.default_mode=\"1680x1050\"" >> /boot/loader.conf
+echo -e "kern.vt.fb.default_mode=\"$resolution\"" >> /boot/loader.conf
 
-#Add AMDGPU to /etc/rc.conf
-echo -e "kld_list=\"amdgpu\"" >> /etc/rc.conf
+#Add amd or intel driver to /etc/rc.conf
+[[ $graphicDriver == "amdgpu" ]] && echo -e "kld_list=\"amdgpu\"" >> /etc/rc.conf
+[[ $graphicDriver == "i915kms" ]] && echo -e "kld_list=\"i915kms\"" >> /etc/rc.conf
 
 #change owner of new files
 chown -R $userName:$userName /home/$userName
