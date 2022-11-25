@@ -56,3 +56,6 @@ echo -e "kern.vt.fb.default_mode=\"1680x1050\"" >> /boot/loader.conf
 
 #Add AMDGPU to /etc/rc.conf
 echo -e "kld_list=\"amdgpu\"" >> /etc/rc.conf
+
+#change owner of new files
+chown -R $userName:$userName /home/$userName
