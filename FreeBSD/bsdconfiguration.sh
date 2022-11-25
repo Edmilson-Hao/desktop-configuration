@@ -59,3 +59,13 @@ echo -e "kld_list=\"amdgpu\"" >> /etc/rc.conf
 
 #change owner of new files
 chown -R $userName:$userName /home/$userName
+
+
+
+
+#drm-kmod
+#	|_ AMD
+#	|	|_amdgpu #newer
+#	|	|_radeonkms #older
+#	|_Intel	+++ xf86-video-intel
+#		|_i915kms
