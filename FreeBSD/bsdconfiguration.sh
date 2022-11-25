@@ -18,7 +18,7 @@ echo "permit nopass $userName" > /usr/local/etc/doas.conf && echo "doas -> ok"
 
 #add i3 to .xinitrc
 [ ! -f "/home/$userName/.xinitrc" ] && touch /home/$userName/.xinitrc
-echo "/urc/local/bin/i3" >> /home/edmilson/.xinitrc && echo "add i3 to .xinitrc -> ok"
+echo "/usr/local/bin/i3" >> /home/edmilson/.xinitrc && echo "add i3 to .xinitrc -> ok"
 
 #add startx to .shrc
 [ ! -f "/home/$userName/.shrc" ]  && touch /home/$userName/.shrc
