@@ -1,15 +1,13 @@
 #!/bin/sh
 
-userName=''
-#Get username
-echo "Enter the user name: "  
-read userName
+#loading config file
+source config.sh
 
 clear
 
-#Needed pkgs
+#Installing pkgs
 echo "Installing packages."
-pkg install xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano micro doas lxappearance leafpad rxvt-unicode xterm setxkbmap papirus-icon-theme terminus-font pcmanfm compton htop font-awesome
+pkg install $neededPackages $neededPackages
 
 #configure doas
 echo "Configuring dotfiles."
@@ -59,13 +57,3 @@ echo -e "kld_list=\"amdgpu\"" >> /etc/rc.conf
 
 #change owner of new files
 chown -R $userName:$userName /home/$userName
-
-
-
-
-#drm-kmod
-#	|_ AMD
-#	|	|_amdgpu #newer
-#	|	|_radeonkms #older
-#	|_Intel	+++ xf86-video-intel
-#		|_i915kms
