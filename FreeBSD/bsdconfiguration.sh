@@ -51,7 +51,7 @@ mv config /home/$userName/.config/i3/config
 
 #mv autostart.sh
 echo "Moving autorstart script"
-mv .autostart.sh /home/$userName/.autostart.sh
+mv autostart.sh /home/$userName/.autostart.sh
 
 #mv compton
 echo "Moving compiton config file"
