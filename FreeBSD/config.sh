@@ -15,5 +15,5 @@ defaultPackages="xorg i3-gaps ufetch neofetch scrot feh i3status i3lock nano mic
 #add any package you want (space separeted)
 neededPackages=""
 
-#select console resolution (3840x2160 || 1920x1080 || 1680x1050 || 1024x768)
+#select console resolution (3840x2160 || 1920x1080 || 1680x1050 || 1280x720 || 1024x768)
 resolution="1680x1050"
