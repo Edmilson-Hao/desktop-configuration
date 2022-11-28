@@ -1,1 +1,3 @@
-apk add xorg-server xf86-input-libinput eudev mesa
+#!/bin/ash
+
+apk add --no-cache --virtual
