@@ -79,7 +79,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym Print exec scrot /home/edmilson/Imagens/`date +%Y-%m-%d_%H:%M:%S`.jpg
 
 #Reload .Xdefaults when reloading I3wm
-exec_always xrdb /home/edmilson/.Xdefaults
+exec_always xrdb /home/edmilson/.Xresources
 
 #Inner and Outer gaps
 gaps inner 4 
